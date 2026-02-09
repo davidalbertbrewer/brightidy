@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brightidy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Brightidy</h1>
+      <p id="status"></p>
+    </header>
+
+    <main>
+      <!-- Registration form -->
+      <section id="register-section" class="card">
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="reg-username">Username</label>
+          <input type="text" id="reg-username" required />
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" required />
+          <label for="reg-role">Role</label>
+          <select id="reg-role">
+            <option value="client">Client</option>
+            <option value="cleaner">Cleaner</option>
+          </select>
+          <button type="submit">Create Account</button>
+        </form>
+        <div id="register-message" class="message"></div>
+      </section>
+
+      <!-- Login form -->
+      <section id="login-section" class="card">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="login-username">Username</label>
+          <input type="text" id="login-username" required />
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required />
+          <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="message"></div>
+      </section>
+
+      <!-- Dashboard -->
+      <section id="dashboard-section" class="card hidden">
+        <h2>Dashboard</h2>
+        <p>Welcome, <span id="user-name"></span> (<span id="user-role"></span>)</p>
+        <button id="logout-btn">Logout</button>
+        <div id="client-actions" class="actions hidden">
+          <h3>Client Actions</h3>
+          <button id="list-cleaners-btn">List Cleaners</button>
+          <button id="create-booking-btn">Create Booking</button>
+          <button id="my-bookings-btn">My Bookings</button>
+          <button id="rate-booking-btn">Rate Booking</button>
+        </div>
+        <div id="cleaner-actions" class="actions hidden">
+          <h3>Cleaner Actions</h3>
+          <button id="my-assignments-btn">My Assignments</button>
+        </div>
+        <div id="admin-actions" class="actions hidden">
+          <h3>Admin Actions</h3>
+          <button id="all-bookings-btn">All Bookings</button>
+        </div>
+        <!-- Results output -->
+        <div id="output"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
