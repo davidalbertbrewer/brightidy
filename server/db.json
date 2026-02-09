@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "alice",
+      "passwordHash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "client"
+    },
+    {
+      "id": 2,
+      "username": "bob",
+      "passwordHash": "b3a8e0e1f9ab1bfe3a36f231f676f78bb30a519d2b21e6c530c0eee8ebb4a5d0",
+      "role": "cleaner"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "client": "alice",
+      "cleaner": null,
+      "propertyAddress": "123 Main St",
+      "propertyType": "home",
+      "date": "2026-02-10",
+      "time": "10:00",
+      "duration": 2,
+      "status": "pending",
+      "rating": null,
+      "tip": null
+    }
+  ],
+  "messages": []
+}
