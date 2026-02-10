@@ -8,7 +8,7 @@
  */
 
 (() => {
-  const baseUrl = 'http://localhost:3000';
+ const baseUrl = 'https://brightidy-backend-b08dcff878ba.herokuapp.com';
   const statusEl = document.getElementById('status');
   const registerSection = document.getElementById('register-section');
   const loginSection = document.getElementById('login-section');
